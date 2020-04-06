@@ -15,7 +15,7 @@
     <body>
         <h1>(EL)Cześć, ${osoba}!</h1>
         <h1>(JSTL)Cześć, <c:out value="${osoba}"/>!</h1>
-        <div>mailto: ${osoba.getEmail()}</div>
+        <a href="mailto:${osoba.getEmail()}">Email</a>
         <div>
             <c:forEach items="${dniTygodnia}" var="dzien">
                 <p>
